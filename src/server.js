@@ -1,6 +1,4 @@
 setTimeout(() => {  
-        
-
     console.log("we are here");
     const server = require("http").createServer();
     const io = require("socket.io")(server, {

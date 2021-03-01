@@ -24,9 +24,7 @@
     "start": "concurrently \"react-scripts start\" \"cd src & node server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "nd": "(cd src & node server.js) && yarn start",
-    "parallel": "cd src & node server.js --parallel yarn start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
