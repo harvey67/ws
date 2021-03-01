@@ -1,0 +1,49 @@
+{
+  "name": "ws",
+  "homepage": "http://harvey67.github.io/ws",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "socket.io": "^3.1.2",
+    "socket.io-client": "^3.1.2",
+    "web-vitals": "^1.0.1",
+    "ws": "^7.4.3"
+  },
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "concurrently \"react-scripts start\" \"cd src & node server.js\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "nd": "(cd src & node server.js) && yarn start",
+    "parallel": "cd src & node server.js --parallel yarn start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
